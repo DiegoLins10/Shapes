@@ -10,7 +10,7 @@ namespace Shapees
     {
         static void Main(string[] args)
         {
-            List<Shapee> list = new List<Shapee>();
+            List<AbstractShapee> list = new List<AbstractShapee>();
 
             Console.Write("Enter the number of shapes: ");
             int n = int.Parse(Console.ReadLine());
@@ -40,7 +40,7 @@ namespace Shapees
 
             Console.WriteLine();
             Console.WriteLine("SHAPE AREAS:");
-            foreach (Shapee shape in list)
+            foreach (AbstractShapee shape in list)
             {
                 Console.WriteLine(shape.Area().ToString("F2", CultureInfo.InvariantCulture));
             }

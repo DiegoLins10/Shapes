@@ -1,15 +1,15 @@
 ﻿using Shapees.Entities.Enums;
+using Shapees.Services;
 using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Shapees.Entities
 {
-    class Circle : Shapee
+    class Circle : AbstractShapee
     {
         public double Radius { get; set; }
 
-        public Circle(double radius, Color color) : base (color)
+        public Circle(double radius, Color color) : base(color)
         {
             Radius = radius;
         }

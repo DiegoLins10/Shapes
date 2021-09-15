@@ -1,20 +1,20 @@
 ﻿using Shapees.Entities.Enums;
+using Shapees.Services;
 using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Shapees.Entities
 {
-    abstract class Shapee
+    abstract class AbstractShapee : IShapee
     {
         public Color Color { get; set; }
 
-
-        public Shapee(Color color)
+        protected AbstractShapee(Color color)
         {
             Color = color;
         }
 
         public abstract double Area();
+
     }
 }

@@ -1,11 +1,12 @@
 ﻿using Shapees.Entities.Enums;
+using Shapees.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Shapees.Entities
 {
-    class Rectangle : Shapee
+    class Rectangle : AbstractShapee
     {
         public double Width { get; set; }
         public double Height { get; set; }
